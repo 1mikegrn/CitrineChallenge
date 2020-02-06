@@ -15,13 +15,20 @@ class Constraint():
         self.example = [float(x) for x in lines[1].split(" ")[0:self.n_dim]]
 
         # Run through the rest of the lines and compile the constraints
-        self.exprs = []
+        self.exprs = list()
+        self.raw_exprs = list()
+
         for i in range(2, len(lines)):
             # support comments in the first line
             if lines[i][0] == "#":
                 continue
+            self.raw_exprs.append(lines[i])
             self.exprs.append(compile(lines[i], "<string>", "eval"))
         return
+
+    def get_constraints(self):
+        """Get the raw string of the constraints"""
+        return self.raw_exprs
 
     def get_example(self):
         """Get the example feasible vector"""
