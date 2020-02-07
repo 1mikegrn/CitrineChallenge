@@ -1,1 +1,1 @@
-"""Main module of CitrineChallenge Module"""
+"""Main module of CitrineChallenge Library"""

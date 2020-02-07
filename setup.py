@@ -37,7 +37,7 @@ setup(
     ],
 
     entry_points={
-        'console_scripts': ['sampler=src.__main__:main']
+        'console_scripts': ['sampler=CitrineChallenge.src.__main__:main']
     },
 
     project_urls={
