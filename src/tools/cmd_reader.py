@@ -1,9 +1,12 @@
 import sys
 
 def reader():
-
+    """
+Objective:
+    
+    """
     assert len(sys.argv) == 4, \
-        'Expected CLI input <input file> <output file> <n_results>'
+        'Expected CLI input <sampler> <input file> <output file> <n_results>'
 
     input_file = sys.argv[1]
     output_file = sys.argv[2]

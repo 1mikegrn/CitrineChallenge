@@ -12,8 +12,6 @@ from src.constraints import Constraint
 
 def main():
 
-    # input_file, output_file, n_results = cmd_reader.reader()
-
     input_file, output_file, n_results = (
         r"D:\Programming\CitrineChallenge\tests\alloy.txt",
         r'D:\Programming\CitrineChallenge\output.txt',
@@ -38,7 +36,7 @@ def main():
             report_values=report_values
         )
 
-        test_values, report_values = generator.generate(
+        test_values = generator.generate(
             test_values=test_values,
             report_values=report_values
         )
