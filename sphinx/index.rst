@@ -8,7 +8,6 @@ CitrineChallenge: A submission for Citrine's Technical Challenge
 
 .. include:: main_page.rst
 
-
 CitrineChallenge
 ================
 
@@ -31,10 +30,10 @@ CitrineChallenge
    :members: save
 
 .. include:: /about.rst
+
 .. toctree::
    :maxdepth: 5
    :caption: Contents:
-
 
 Indices and tables
 ==================
