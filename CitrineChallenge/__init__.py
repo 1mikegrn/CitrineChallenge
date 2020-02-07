@@ -75,4 +75,4 @@ previously rejected test values and accepted report values.
 
 """
 
-from CitrineChallenge import python_api
+from CitrineChallenge import *
