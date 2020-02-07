@@ -6,10 +6,10 @@ def clean(class_object, report_values, test_values):
     """
 Objective: 
 
-The clean() function applies the class_object.apply() criterion to
-the test_values array to check and see if any of the newly provided data 
+The :code:`clean()` function applies the :code:`class_object.apply()` criterion
+to the test_values array to check and see if any of the newly provided data 
 points are within the constraints, as defined by the constraints from the 
-<input.txt> file. The function also checks for duplication within the
+:code:`<input.txt>` file. The function also checks for duplication within the
 report_value array. If these two criterion are satisfied, the test_value
 Nx1 array is added to the report_values array and the index of the position
 is noted. Once the test_values array has been traversed, the test_values 
@@ -33,16 +33,16 @@ array by the function.
 
     :param test_values:     <np.array>
 
-test_values is the array of vectors which have yet to pass through the clean()
-protocol. Vectors from this array that meet the contraints are parsed from the
-test_values array and appended to the report_values array.
+test_values is the array of vectors which have yet to pass through the 
+:code:`clean()` protocol. Vectors from this array that meet the constraints are
+parsed from the test_values array and appended to the report_values array.
 
 ::
 
     :return:                test_values, report_values
 
-returns the cleaned arrays, maintaing len(test_values) + len(report_values) =
-n_results + 1.
+returns the cleaned arrays, maintaining :code:`len(test_values) + 
+len(report_values) = n_results + 1.`
 
     """
     to_remove = list()

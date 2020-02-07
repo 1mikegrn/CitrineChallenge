@@ -12,7 +12,8 @@ def main():
 
 Entry point for the command line interface. Function directs arguments from the 
 CLI reader to the necessary subroutines within the library for caluclation. Once
-the calculation is done, results are passed to the save() function to be saved.
+the calculation is done, results are passed to the :code:`save()` function to be
+saved.
 
 ::
 

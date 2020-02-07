@@ -13,17 +13,17 @@ def calculate(input_file, n_results, **kwargs):
 Objective:
 
 Generate an array of vectors which satisfy the constraints, input by the 
-provided constraints input_file. Delegates the calculation between the clean()
-and generate() functions until all the results generated satisfy all 
-constraints. 
+provided constraints input_file. Delegates the calculation between the
+:code:`clean()` and :code:`generate()` functions until all the results generated
+satisfy all constraints. 
 
 ::
 
     :param input_file:      str()
 
-string which points to the constraints file from outside the module. input_file 
-is parsed by the Constratints() class so to generate the constraints parameter,
-the hypercube dimensionality, and the example point.
+string which points to the constraints file from outside the module. 
+:code:`input_file` is parsed by the :code:`Constraints()` class so to generate
+the constraints parameter, the hypercube dimensionality, and the example point.
 
 ::
 

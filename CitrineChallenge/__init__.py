@@ -10,8 +10,9 @@ This library includes the following functions:
 
     CitrineChallenge.src.__main__.main()
 
-this is the entry point of the command line interface. main() directs arguments
-from the CLI to the necessary subroutines within the library for calculation.
+this is the entry point of the command line interface. :code:`main()` directs 
+arguments from the CLI to the necessary subroutines within the library for 
+calculation.
 
 ::
 

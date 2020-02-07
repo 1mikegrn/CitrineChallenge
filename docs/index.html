@@ -206,8 +206,9 @@ hypercube, whose vectors satisfy a system of non-linear constraints.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CitrineChallenge</span><span class="o">.</span><span class="n">src</span><span class="o">.</span><span class="n">__main__</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>this is the entry point of the command line interface. main() directs arguments
-from the CLI to the necessary subroutines within the library for calculation.</p>
+<p>this is the entry point of the command line interface. <code class="code docutils literal notranslate"><span class="pre">main()</span></code> directs 
+arguments from the CLI to the necessary subroutines within the library for 
+calculation.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CitrineChallenge</span><span class="o">.</span><span class="n">src</span><span class="o">.</span><span class="n">calculator</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span>
     <span class="n">input_file</span><span class="p">,</span> <span class="n">n_results</span>
 <span class="p">)</span>
@@ -239,7 +240,8 @@ previously rejected test values and accepted report values.</p>
 <code class="sig-prename descclassname">CitrineChallenge.src.__main__.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.__main__.main" title="Permalink to this definition">¶</a></dt>
 <dd><p>Entry point for the command line interface. Function directs arguments from the 
 CLI reader to the necessary subroutines within the library for caluclation. Once
-the calculation is done, results are passed to the save() function to be saved.</p>
+the calculation is done, results are passed to the <code class="code docutils literal notranslate"><span class="pre">save()</span></code> function to be
+saved.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">params</span><span class="p">:</span>    <span class="o">&lt;</span><span class="kc">None</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -272,7 +274,7 @@ input_file starts with a single line header that gives the dimensionality of the
 problem, which is defined on the unit hypercube. The next line is a single 
 example feasible point. The remaining lines are a list of constraints as python 
 expressions containing + , - , * , / , and ** operators. They have been 
-transformed such that they all take the form g(x) &gt;= 0.0</p>
+transformed such that they all take the form g(x) &gt;= 0.0.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">output_file</span><span class="p">:</span>     <span class="nb">str</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -298,10 +300,10 @@ generate over the unit hypercube.</p>
 <dt id="CitrineChallenge.src.tools.cleaning.clean">
 <code class="sig-prename descclassname">CitrineChallenge.src.tools.cleaning.</code><code class="sig-name descname">clean</code><span class="sig-paren">(</span><em class="sig-param">class_object</em>, <em class="sig-param">report_values</em>, <em class="sig-param">test_values</em><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.tools.cleaning.clean" title="Permalink to this definition">¶</a></dt>
 <dd><p>Objective:</p>
-<p>The clean() function applies the class_object.apply() criterion to
-the test_values array to check and see if any of the newly provided data 
+<p>The <code class="code docutils literal notranslate"><span class="pre">clean()</span></code> function applies the <code class="code docutils literal notranslate"><span class="pre">class_object.apply()</span></code> criterion
+to the test_values array to check and see if any of the newly provided data 
 points are within the constraints, as defined by the constraints from the 
-&lt;input.txt&gt; file. The function also checks for duplication within the
+<code class="code docutils literal notranslate"><span class="pre">&lt;input.txt&gt;</span></code> file. The function also checks for duplication within the
 report_value array. If these two criterion are satisfied, the test_value
 Nx1 array is added to the report_values array and the index of the position
 is noted. Once the test_values array has been traversed, the test_values 
@@ -319,38 +321,39 @@ array by the function.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">test_values</span><span class="p">:</span>     <span class="o">&lt;</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>test_values is the array of vectors which have yet to pass through the clean()
-protocol. Vectors from this array that meet the contraints are parsed from the
-test_values array and appended to the report_values array.</p>
+<p>test_values is the array of vectors which have yet to pass through the 
+<code class="code docutils literal notranslate"><span class="pre">clean()</span></code> protocol. Vectors from this array that meet the constraints are
+parsed from the test_values array and appended to the report_values array.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="k">return</span><span class="p">:</span>                <span class="n">test_values</span><span class="p">,</span> <span class="n">report_values</span>
 </pre></div>
 </div>
-<p>returns the cleaned arrays, maintaing len(test_values) + len(report_values) =
-n_results + 1.</p>
+<p>returns the cleaned arrays, maintaining <code class="code docutils literal notranslate"><span class="pre">len(test_values)</span> <span class="pre">+</span> 
+<span class="pre">len(report_values)</span> <span class="pre">=</span> <span class="pre">n_results</span> <span class="pre">+</span> <span class="pre">1.</span></code></p>
 </dd></dl>
 
 <span class="target" id="module-CitrineChallenge.src.tools.generator"></span><dl class="function">
 <dt id="CitrineChallenge.src.tools.generator.generate">
 <code class="sig-prename descclassname">CitrineChallenge.src.tools.generator.</code><code class="sig-name descname">generate</code><span class="sig-paren">(</span><em class="sig-param">test_values</em>, <em class="sig-param">report_values</em><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.tools.generator.generate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Objective:</p>
-<p>the generate() function uses the ‘accepted’ points in tandem with the 
+<p>the <code class="code docutils literal notranslate"><span class="pre">generate()</span></code> function uses the ‘accepted’ points in tandem with the 
 ‘rejected’ points to replace the rejected points with a new data set for 
 cleaning. Each rejected point is paired with at random an accepted point
 in the ‘report_values’ array. These two points are then passed through the
-switch() function in src.generator so to replace the rejected value with a
-new test value. The new test values are returned for cleaning.</p>
+<code class="code docutils literal notranslate"><span class="pre">switch()</span></code> function in src.generator so to replace the rejected value with
+a new test value. The new test values are returned for cleaning.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">test_values</span><span class="p">:</span>     <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>test_values are values which were rejected by the cleaner() function located
-in src.cleaning. These values are passed through the switch() function and
-replaced in position.</p>
+<p>test_values are values which were rejected by the <code class="code docutils literal notranslate"><span class="pre">cleaner()</span></code> function 
+located in src.cleaning. These values are passed through the <code class="code docutils literal notranslate"><span class="pre">switch()</span></code>
+function and replaced in position.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">report_values</span><span class="p">:</span>   <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>array of values previously accepted by the cleaner function. A set of random 
-vectors are sefected from this array and utilized by the switch() function 
-for replacing the rejected test_values with a new test_values for cleaning.</p>
+vectors are sefected from this array and utilized by the <code class="code docutils literal notranslate"><span class="pre">switch()</span></code>
+function for replacing the rejected test_values with a new test_values for
+cleaning.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">returns</span><span class="p">:</span>               <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -358,7 +361,31 @@ for replacing the rejected test_values with a new test_values for cleaning.</p>
 cleaning.</p>
 </dd></dl>
 
-<span class="target" id="module-CitrineChallenge.src.tools.saver"></span></div>
+<span class="target" id="module-CitrineChallenge.src.tools.saver"></span><dl class="function">
+<dt id="CitrineChallenge.src.tools.saver.save">
+<code class="sig-prename descclassname">CitrineChallenge.src.tools.saver.</code><code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">report_values</em>, <em class="sig-param">input_file</em>, <em class="sig-param">output_file</em><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.tools.saver.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Objective:</p>
+<p>Save the generated data file on the local machine as specified by the
+output_file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">report_values</span><span class="p">:</span>       <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>array of vectors to be exported.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">input_file</span><span class="p">:</span>          <span class="nb">str</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>input file string for if an output file is to be generated.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">output_file</span><span class="p">:</span>         <span class="nb">str</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>local .txt file for the results to be written to.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="k">return</span><span class="p">:</span>                    <span class="o">&lt;</span><span class="kc">None</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>returns nothing</p>
+</dd></dl>
+
+</div>
 <div class="section" id="about">
 <h1>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h1>
 <p>Michael Green is a PhD candidate under the supervision of Dr. Xiaobo

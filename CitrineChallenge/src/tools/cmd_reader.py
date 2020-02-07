@@ -30,7 +30,7 @@ input_file starts with a single line header that gives the dimensionality of the
 problem, which is defined on the unit hypercube. The next line is a single 
 example feasible point. The remaining lines are a list of constraints as python 
 expressions containing + , - , * , / , and ** operators. They have been 
-transformed such that they all take the form g(x) >= 0.0 
+transformed such that they all take the form g(x) >= 0.0. 
 
 ::
 

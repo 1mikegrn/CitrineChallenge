@@ -3,9 +3,16 @@ class Constraint():
 
     def __init__(self, fname, **kwargs):
         """
-        Construct a Constraint object from a constraints file
+Construct a Constraint object from a constraints file
 
-        :param fname: Name of the file to read the Constraint from (string)
+::
+
+    :param fname:       str()
+    
+Name of the file to read the Constraint from (string). 
+
+- If **kwarg :code:`google` is provided, fname can be a google colab-generated
+  bytes string, or a list of strings.
         """
 
         if 'google' in kwargs and kwargs['google'] is True:
