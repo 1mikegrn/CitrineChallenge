@@ -8,7 +8,7 @@ from CitrineChallenge.src.tools import(
 
 from CitrineChallenge.src.constraints import Constraint
 
-def calculate(input_file, n_results):
+def calculate(input_file, n_results, **kwargs):
     """
 Objective:
 
@@ -40,7 +40,7 @@ where N is the n_results + 1 and M is the hypercube dimensionality.
     
     """
     # build the contraint class object from provided input file
-    class_object = Constraint(input_file)
+    class_object = Constraint(input_file, **kwargs)
 
     # extract hypercube dimensionality and example point from the class_object
     example = class_object.get_example()
