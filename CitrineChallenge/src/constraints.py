@@ -1,14 +1,20 @@
 class Constraint():
     """Constraints loaded from a file."""
 
-    def __init__(self, fname):
+    def __init__(self, fname, **kwargs):
         """
         Construct a Constraint object from a constraints file
 
         :param fname: Name of the file to read the Constraint from (string)
         """
-        with open(fname, "r") as f:
-            lines = f.readlines()
+
+        if 'google' in kwargs and kwargs['google'] is True:
+            lines = fname.decode().split('\n')
+        
+        else:
+            with open(fname, "r") as f:
+                lines = f.readlines()
+
         # Parse the dimension from the first line
         self.n_dim = int(lines[0])
         # Parse the example from the second line
