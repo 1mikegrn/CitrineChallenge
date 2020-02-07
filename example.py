@@ -13,7 +13,7 @@ here = path.abspath(path.dirname(__file__))
 def main():
 
     input_file, output_file, n_results = (
-        path.join(here, 'tests', 'alloy.txt'),
+        path.join(here, 'tests', 'mixture.txt'),
         path.join(here, 'output.txt'),
         1000
     )
