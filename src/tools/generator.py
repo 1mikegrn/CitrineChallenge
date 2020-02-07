@@ -1,3 +1,4 @@
+
 from numpy import array
 from numpy.random import randint, random_sample
 
@@ -14,7 +15,7 @@ new test value. The new test values are returned for cleaning.
 
 ::
 
-    :param test_values:     <np.array>
+    :param test_values:     <numpy.array>
 
 test_values are values which were rejected by the cleaner() function located
 in src.cleaning. These values are passed through the switch() function and
@@ -22,68 +23,69 @@ replaced in position.
 
 ::
 
-    :param report_values:   <np.array>
+    :param report_values:   <numpy.array>
 
-array of values previously accepted by the cleaner function. A random vector
-from this array is utilized by the switch() function for replacing the 
-rejected test array with a new untested array for testing.
+array of values previously accepted by the cleaner function. A set of random 
+vectors are sefected from this array and utilized by the switch() function 
+for replacing the rejected test_values with a new test_values for cleaning.
 
 ::
 
-    :returns:               test_values
+    :returns:               <numpy.array>
 
-function returns a new set of test values for subsequent cleaning.
+function returns a numpy array containing a new set of test values for 
+cleaning.
 
     """
- 
-    for i in range(test_values.shape[0]):
 
-        try:
-            choice = randint(report_values.shape[0]-1)
-        except:
-            choice = 0
-        
-        test_values[i] = switch(
-            report_values[choice,:], 
-            test_values[i, :]
-        )
+    report_values = [
+        report_values[randint(report_values.shape[0]), :] 
+        for _ in test_values[:,0]
+    ]
+    
+    report_values = array(report_values)
+
+    test_values = switch(report_values, test_values)
 
     return test_values
 
 
-def switch(accepted, rejected):
+def switch(report_values, test_values):
     """
 Objective:
 
-Replace a 'rejected' point from the test_values array with a new test point
+Replace the 'rejected' points from the test_values array with new test points
 to be examined by the clean() function. The logic is rather simple - between
-every accepted point and rejected point there is a space that is guarenteed to
-be part 'feasible' and part 'infeasible'. The switch function uses linear 
-interpolation to pick a random point between the accepted point and rejected
-point, and replaces the rejected point with this new point to be tested.
+every accepted vector and rejected vector there is a space that is guarenteed 
+to be part 'feasible' and part 'infeasible'. The switch function uses linear 
+interpolation to pick a random vector between the accepted vector and rejected
+vector, and replaces the rejected vector with this new vector to be tested. 
+Switch() makes use of broadcasting over numpy arrays for increased 
+performance.
 
 ::
 
-    :param accepted:        <float>
+    :param report_values:       <numpy.array>
 
 the vector provided from the generate() function located in src.generate which
-picks a random accepted point from the array of accepted vectors.
+picks random accepted points from the array of accepted vectors.
 
 ::
 
-    :param rejected:        <float>
+    :param test_values:         <numpy.array>
 
 the vector provided from the generate() function located in src.generate which
-is a rejected point from the array of rejected vectors.
+provides the rejected vectors from the test_values array.
 
  ::
 
-    :returns:               new_point
+    :returns:                   <numpy.array>
 
-a new point for subsequent cleaning.
+a numpy array of new vectors for subsequent cleaning.
    
     """
+
     pct = random_sample()
-    new_point = (1-pct)*accepted + pct*rejected
+    new_point = (1-pct)*report_values + pct*test_values
 
     return new_point

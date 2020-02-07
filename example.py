@@ -6,13 +6,16 @@ from numpy.random import random_sample
 
 from src.tools import(
     cmd_reader,
-    cleaning, generator
+    cleaning,
+    generator,
+    saver
 ) 
 from src.constraints import Constraint
 
 def main():
 
-    input_file, output_file, n_results = (
+    thing, input_file, output_file, n_results = (
+        'holla',
         r"D:\Programming\CitrineChallenge\tests\alloy.txt",
         r'D:\Programming\CitrineChallenge\output.txt',
         1000
@@ -36,12 +39,16 @@ def main():
             report_values=report_values
         )
 
+        if test_values.shape[0] == 0:
+            break
+
         test_values = generator.generate(
             test_values=test_values,
             report_values=report_values
         )
 
-    print(report_values.shape)
+    saver.save(report_values, output_file)
+
 
 if __name__ == "__main__":
     main()
