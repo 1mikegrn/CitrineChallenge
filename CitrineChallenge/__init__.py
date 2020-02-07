@@ -34,12 +34,47 @@ This library includes the following functions:
 
 ::
 
-    src.tools.cmd_reader.reader(
+    CitrineChallenge.src.__main__.main()
 
+this is the entry point of the command line interface. main() directs arguments
+from the CLI to the necessary subroutines within the library for caluclation.
+
+::
+
+    CitrineChallenge.src.calculator.calculate(
+        input_file, n_results
     )
 
-the reader function parses the command-line interface arguments for calculation.
-see 
+the calculator uses the input file and n_results integer to run the calculation.
+results are returned to be saved. see CitrineChallenge.src.calculator.calculate? 
+for further documentation.
 
-the cleaning function separates 
+::
+
+    CitrineChallenge.src.tools.cmd_reader.reader()
+
+the reader function parses the command-line interface arguments for calculation.
+see CitrineChallenge.src.tools.cmd_reader.reader? for further documentation
+
+::
+
+    CitrineChallenge.src.tools.cleaning.cleaner(
+        class_object, report_values, test_values
+    )
+
+the cleaning function extracts the passing test values from the test_values 
+array and appends them to the report_values array, using constraints defined in
+the class_object. See CitrineChallenge.src.tools.cleaning.cleaner? for 
+further documentation
+
+::
+
+    CitrineChallenge.src.tools.generator.generate(
+        test_values, report_values
+    )
+
+the generate function uses linear interpolation to build new test values from
+previously rejected test values and accepted report values. See
+CitrineChallenge.src.tools.generator.generate? for further documentation
+
 """

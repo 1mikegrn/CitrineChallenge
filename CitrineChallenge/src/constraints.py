@@ -35,12 +35,15 @@ class Constraint():
         return self.example
 
     def get_ndim(self):
-        """Get the dimension of the space on which the constraints are defined"""
+        """
+        Get the dimension of the space on which the constraints are defined
+        """
         return self.n_dim
 
     def apply(self, x):
         """
-        Apply the constraints to a vector, returning True only if all are satisfied
+        Apply the constraints to a vector, returning True only if all are 
+        satisfied
 
         :param x: list or array on which to evaluate the constraints
         """
