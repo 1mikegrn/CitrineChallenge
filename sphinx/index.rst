@@ -6,6 +6,10 @@
 CitrineChallenge: A submission for Citrine's Technical Challenge 
 ================================================================
 
+.. image:: https://img.shields.io/badge/GitHub-repo-lightgrey
+   :target: https://github.com/1mikegrn/CitrineChallenge
+
+
 .. include:: main_page.rst
 
 CitrineChallenge
