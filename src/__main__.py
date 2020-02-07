@@ -17,6 +17,8 @@ def main():
 
     thing, input_file, output_file, n_results = cmd_reader.reader()
 
+    print(thing, input_file, output_file, n_results)
+
     class_object = Constraint(input_file)
 
     example = class_object.get_example()
