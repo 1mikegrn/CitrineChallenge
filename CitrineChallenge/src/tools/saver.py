@@ -1,5 +1,5 @@
 from numpy import savetxt
-from os.path import split 
+from os.path import split, join 
 
 def save(report_values, input_file, output_file):
     """
@@ -33,7 +33,7 @@ local .txt file for the results to be written to.
     """
     if output_file == '-b':
 
-        file_output = split(input_file)[0] + 'output.txt'
+        file_output = join(split(input_file)[0], 'output.txt')
 
         savetxt(file_output, report_values)
 
