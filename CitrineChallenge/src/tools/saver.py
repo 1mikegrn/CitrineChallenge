@@ -30,7 +30,6 @@ local .txt file for the results to be written to.
 
     :return:                    <None>
 
-returns nothing
     """
     if output_file == '-b':
 
