@@ -1,37 +1,380 @@
 
+
 <!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CitrineChallenge: A submission for Citrine’s Technical Challenge &mdash; CitrineChallenge 0.0.1 documentation</title>
+  
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="utf-8" />
-    <title>Welcome to CitrineChallenge’s documentation! &#8212; CitrineChallenge 0.0.1 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
    
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
-  </head><body>
-  
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
           
 
-          <div class="body" role="main">
+          
+            <a href="#" class="icon icon-home"> CitrineChallenge
+          
+
+          
+          </a>
+
+          
             
-  <div class="section" id="welcome-to-citrinechallenge-s-documentation">
-<h1>Welcome to CitrineChallenge’s documentation!<a class="headerlink" href="#welcome-to-citrinechallenge-s-documentation" title="Permalink to this headline">¶</a></h1>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">CitrineChallenge: A submission for Citrine’s Technical Challenge</a></li>
+<li><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li><a class="reference internal" href="#library-structure">Library Structure</a></li>
+<li><a class="reference internal" href="#module-CitrineChallenge.__init__">CitrineChallenge</a></li>
+<li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">CitrineChallenge</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>CitrineChallenge: A submission for Citrine’s Technical Challenge</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="citrinechallenge-a-submission-for-citrine-s-technical-challenge">
+<h1>CitrineChallenge: A submission for Citrine’s Technical Challenge<a class="headerlink" href="#citrinechallenge-a-submission-for-citrine-s-technical-challenge" title="Permalink to this headline">¶</a></h1>
+<p>This site is a docstring repository for the CitrineChallenge, written by
+Michael Green in application for the Scientific Software Engineering position
+with Citrine Informatics.</p>
+<p>Use the tabs on the left-hand side of the page to navigate to the
+various document sections.</p>
+<p><strong>Connect:</strong></p>
+<p>Michael Green
+<a class="reference external" href="https://1mikegrn.github.io">&#64;Website</a>
+<a class="reference external" href="https://github.com/1mikegrn">&#64;Github</a>
+<a class="reference external" href="https://stackoverflow.com/users/10881573/michael-green?tab=profile">&#64;StackOverflow</a></p>
+</div>
+<div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>From the command prompt, the latest version this library can be installed
+via pip and git</p>
+<p><code class="code docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">git+https://github.com/1mikegrn/CitrineChallenge</span></code></p>
+<p>Where the setup file will automatically check dependencies and install
+to the main module library. Once installed, calling <cite>sampler
+&lt;input_file&gt; &lt;output_file&gt; &lt;n_results&gt;</cite> will execute the calculation.</p>
+<p>This library also has a colab jupyter notebook, from which calculations can be
+executed without any necessary local downloads.
+<a class="reference external" href="https://colab.research.google.com/github/1mikegrn/CitrineChallenge/blob/master/colab/CitrineChallenge.ipynb">&#64;Colab</a></p>
+</div>
+<div class="section" id="library-structure">
+<h1>Library Structure<a class="headerlink" href="#library-structure" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CitrineChallenge</span><span class="o">/</span>
+    <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>                         <span class="c1"># initialize CitrineChallenge</span>
+    <span class="n">src</span><span class="o">/</span>                                <span class="c1"># source module</span>
+        <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>                     <span class="c1"># initialize src</span>
+        <span class="n">__main__</span><span class="o">.</span><span class="n">py</span>                     <span class="c1"># CLI access point</span>
+        <span class="n">calculator</span><span class="o">.</span><span class="n">py</span>                   <span class="c1"># main calculation module</span>
+        <span class="n">constraints</span><span class="o">.</span><span class="n">py</span>                  <span class="c1"># constraints parse point</span>
+        <span class="n">tools</span><span class="o">/</span>                          <span class="c1"># tools module</span>
+            <span class="n">__init__py</span>                  <span class="c1"># initialize tools</span>
+            <span class="n">cmd_reader</span><span class="o">.</span><span class="n">py</span>               <span class="c1"># CLI reader</span>
+            <span class="n">cleaning</span><span class="o">.</span><span class="n">py</span>                 <span class="c1"># cleaning module</span>
+            <span class="n">generator</span><span class="o">.</span><span class="n">py</span>                <span class="c1"># generator module</span>
+            <span class="n">saver</span><span class="o">.</span><span class="n">py</span>                    <span class="c1"># file output module</span>
+            <span class="n">quick_graphs</span><span class="o">.</span><span class="n">py</span>             <span class="c1"># graph generator</span>
+</pre></div>
+</div>
+<p>the built-in docstrings are all accessible via standard <cite>?</cite> querying in a python
+shell where CitrineChallenge is imported.</p>
+</div>
+<div class="section" id="module-CitrineChallenge.__init__">
+<span id="citrinechallenge"></span><h1>CitrineChallenge<a class="headerlink" href="#module-CitrineChallenge.__init__" title="Permalink to this headline">¶</a></h1>
+<p>The CitrineChallenge library</p>
+<p>This library is designed to build an array of vectors in an n-dimensional 
+hypercube, whose vectors satisfy a system of non-linear constraints.</p>
+<p>This library includes the following functions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CitrineChallenge</span><span class="o">.</span><span class="n">src</span><span class="o">.</span><span class="n">__main__</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>this is the entry point of the command line interface. main() directs arguments
+from the CLI to the necessary subroutines within the library for calculation.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CitrineChallenge</span><span class="o">.</span><span class="n">src</span><span class="o">.</span><span class="n">calculator</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span>
+    <span class="n">input_file</span><span class="p">,</span> <span class="n">n_results</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>the calculator uses the input file and n_results integer to run the calculation.
+results are returned to be saved.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CitrineChallenge</span><span class="o">.</span><span class="n">src</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">cmd_reader</span><span class="o">.</span><span class="n">reader</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>the reader function parses the command-line interface arguments for calculation.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CitrineChallenge</span><span class="o">.</span><span class="n">src</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">cleaning</span><span class="o">.</span><span class="n">cleaner</span><span class="p">(</span>
+    <span class="n">class_object</span><span class="p">,</span> <span class="n">report_values</span><span class="p">,</span> <span class="n">test_values</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>the cleaning function extracts the passing test values from the test_values 
+array and appends them to the report_values array, using constraints defined in
+the class_object.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CitrineChallenge</span><span class="o">.</span><span class="n">src</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">generator</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span>
+    <span class="n">test_values</span><span class="p">,</span> <span class="n">report_values</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>the generate function uses linear interpolation to build new test values from
+previously rejected test values and accepted report values.</p>
+<span class="target" id="module-CitrineChallenge.src.__main__"></span><dl class="function">
+<dt id="CitrineChallenge.src.__main__.main">
+<code class="sig-prename descclassname">CitrineChallenge.src.__main__.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.__main__.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Entry point for the command line interface. Function directs arguments from the 
+CLI reader to the necessary subroutines within the library for caluclation. Once
+the calculation is done, results are passed to the save() function to be saved.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">params</span><span class="p">:</span>    <span class="o">&lt;</span><span class="kc">None</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">returns</span><span class="p">:</span>   <span class="o">&lt;</span><span class="kc">None</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<span class="target" id="module-CitrineChallenge.src.tools.cmd_reader"></span><dl class="function">
+<dt id="CitrineChallenge.src.tools.cmd_reader.reader">
+<code class="sig-prename descclassname">CitrineChallenge.src.tools.cmd_reader.</code><code class="sig-name descname">reader</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.tools.cmd_reader.reader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Objective:</p>
+<p>Interpret the inputs provided by the command-line interface (CLI). 
+Though this function takes no direct inputs per se, it requires CLI inputs of
+the following structure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sampler</span> <span class="o">&lt;</span><span class="nb">input</span> <span class="n">file</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">output</span> <span class="n">file</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">n_results</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>As such, the parameters are discussed below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">sampler</span><span class="p">:</span>         <span class="n">sampler</span>
+</pre></div>
+</div>
+<p>The console script which initiates the __main__ function in the CitrineChallenge
+module.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">input_file</span><span class="p">:</span>      <span class="nb">str</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This parameter is a string containing the file path to the input_file. The 
+input_file starts with a single line header that gives the dimensionality of the 
+problem, which is defined on the unit hypercube. The next line is a single 
+example feasible point. The remaining lines are a list of constraints as python 
+expressions containing + , - , * , / , and ** operators. They have been 
+transformed such that they all take the form g(x) &gt;= 0.0</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">output_file</span><span class="p">:</span>     <span class="nb">str</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This parameter is a string containing the file path to the output_file. The 
+output_file is an empty output.txt file to which the results of the calculation
+will be placed.</p>
+<ul class="simple">
+<li><p>if given as the argument ‘-b’, the module will build a .txt file in the 
+directory of the input file.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">n_results</span><span class="p">:</span>       <span class="nb">int</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This parameter is an integer value of the number of new vector results to 
+generate over the unit hypercube.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">returns</span><span class="p">:</span>               <span class="p">(</span><span class="n">input_file</span><span class="p">,</span> <span class="n">output_file</span><span class="p">,</span> <span class="n">n_results</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns a tuple of the parsed CLI inputs to be utilized by the module.</p>
+</dd></dl>
+
+<span class="target" id="module-CitrineChallenge.src.tools.cleaning"></span><dl class="function">
+<dt id="CitrineChallenge.src.tools.cleaning.clean">
+<code class="sig-prename descclassname">CitrineChallenge.src.tools.cleaning.</code><code class="sig-name descname">clean</code><span class="sig-paren">(</span><em class="sig-param">class_object</em>, <em class="sig-param">report_values</em>, <em class="sig-param">test_values</em><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.tools.cleaning.clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Objective:</p>
+<p>The clean() function applies the class_object.apply() criterion to
+the test_values array to check and see if any of the newly provided data 
+points are within the constraints, as defined by the constraints from the 
+&lt;input.txt&gt; file. The function also checks for duplication within the
+report_value array. If these two criterion are satisfied, the test_value
+Nx1 array is added to the report_values array and the index of the position
+is noted. Once the test_values array has been traversed, the test_values 
+array is shortened by deleting the transferred values.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">class_object</span><span class="p">:</span>    <span class="o">&lt;</span><span class="n">class</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>class_object is the ‘Constraints’ class defined in src/constraints.py</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">report_values</span><span class="p">:</span>   <span class="o">&lt;</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>report_values is the array of vectors which have passed previous clean()
+implementations. New ‘good’ results are to be appended to the report_values
+array by the function.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">test_values</span><span class="p">:</span>     <span class="o">&lt;</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>test_values is the array of vectors which have yet to pass through the clean()
+protocol. Vectors from this array that meet the contraints are parsed from the
+test_values array and appended to the report_values array.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="k">return</span><span class="p">:</span>                <span class="n">test_values</span><span class="p">,</span> <span class="n">report_values</span>
+</pre></div>
+</div>
+<p>returns the cleaned arrays, maintaing len(test_values) + len(report_values) =
+n_results + 1.</p>
+</dd></dl>
+
+<span class="target" id="module-CitrineChallenge.src.tools.generator"></span><dl class="function">
+<dt id="CitrineChallenge.src.tools.generator.generate">
+<code class="sig-prename descclassname">CitrineChallenge.src.tools.generator.</code><code class="sig-name descname">generate</code><span class="sig-paren">(</span><em class="sig-param">test_values</em>, <em class="sig-param">report_values</em><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.tools.generator.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Objective:</p>
+<p>the generate() function uses the ‘accepted’ points in tandem with the 
+‘rejected’ points to replace the rejected points with a new data set for 
+cleaning. Each rejected point is paired with at random an accepted point
+in the ‘report_values’ array. These two points are then passed through the
+switch() function in src.generator so to replace the rejected value with a
+new test value. The new test values are returned for cleaning.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">test_values</span><span class="p">:</span>     <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>test_values are values which were rejected by the cleaner() function located
+in src.cleaning. These values are passed through the switch() function and
+replaced in position.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">report_values</span><span class="p">:</span>   <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>array of values previously accepted by the cleaner function. A set of random 
+vectors are sefected from this array and utilized by the switch() function 
+for replacing the rejected test_values with a new test_values for cleaning.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">returns</span><span class="p">:</span>               <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>function returns a numpy array containing a new set of test values for 
+cleaning.</p>
+</dd></dl>
+
+<span class="target" id="module-CitrineChallenge.src.tools.saver"></span></div>
+<div class="section" id="about">
+<h1>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h1>
+<p>Michael Green is a PhD candidate under the supervision of Dr. Xiaobo
+Chen at the University of Missouri–Kansas City, Department of Chemistry.
+He received his Bachelors of Science in chemistry with a minor in
+mathematics from the University of Idaho in 2016, and his Masters of
+Science in chemistry from the University of Missouri–Kansas City in
+2019. His research interests include the development, characterization,
+modeling, and application of nanomaterials in light/matter interactions,
+focusing on photolysis, photocatalysis, and microwave absorption, as
+well as short-range matter/matter interactions with a focus in physical
+adsorption.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Contact</span><span class="p">:</span>
+    <span class="n">magwwc</span><span class="nd">@mail</span><span class="o">.</span><span class="n">umkc</span><span class="o">.</span><span class="n">edu</span>
+</pre></div>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -45,66 +388,43 @@
 </div>
 
 
+           </div>
+           
           </div>
-          
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="#">CitrineChallenge</a></h1>
+          <footer>
+  
 
+  <hr/>
 
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Michael Green
 
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
-
-
-
-
-<h3>Navigation</h3>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="#">Documentation overview</a><ul>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
+</footer>
 
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2020, Michael Green.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="_sources/index.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
 
-    
+    </section>
 
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
     
-  </body>
+   
+
+</body>
 </html>
