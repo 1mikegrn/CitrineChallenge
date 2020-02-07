@@ -12,13 +12,13 @@ from src.constraints import Constraint
 
 def main():
 
-    # input_file, output_file, n_results = cmd_reader.reader()
+    input_file, output_file, n_results = cmd_reader.reader()
 
-    input_file, output_file, n_results = (
-        r"D:\Programming\CitrineChallenge\tests\alloy.txt",
-        r'D:\Programming\CitrineChallenge\output.txt',
-        1000
-    )
+    # input_file, output_file, n_results = (
+    #     r"D:\Programming\CitrineChallenge\tests\alloy.txt",
+    #     r'D:\Programming\CitrineChallenge\output.txt',
+    #     1000
+    # )
 
     class_object = Constraint(input_file)
 
@@ -43,7 +43,7 @@ def main():
             report_values=report_values
         )
 
-    print(report_values.shape)
+    print(report_values)
 
 if __name__ == "__main__":
     main()
