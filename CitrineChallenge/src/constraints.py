@@ -15,7 +15,7 @@ class Constraint():
             with open(fname, "r") as f:
                 lines = f.readlines()
 
-        print(lines)
+        return lines
 
         # Parse the dimension from the first line
         self.n_dim = int(lines[0])
