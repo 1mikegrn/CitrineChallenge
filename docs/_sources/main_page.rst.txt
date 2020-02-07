@@ -21,8 +21,9 @@ via pip and git
 :code:`pip install git+https://github.com/1mikegrn/CitrineChallenge`
 
 Where the setup file will automatically check dependencies and install
-to the main module library. Once installed, calling :code:`sampler 
-<input_file> <output_file> <n_results>` will execute the calculation.
+to the main module library. Once installed, calling
+:code:`sampler <input_file> <output_file> <n_results>` will execute the
+calculation.
 
 This library also has a colab jupyter notebook, from which calculations can be
 executed without any necessary local downloads.
