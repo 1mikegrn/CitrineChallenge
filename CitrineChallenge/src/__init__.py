@@ -1,4 +1,4 @@
-"""Main module of CitrineChallenge Library"""
+"""Main module of CitrineChallenge library"""
 
 from CitrineChallenge.src import( 
     calculator, 
