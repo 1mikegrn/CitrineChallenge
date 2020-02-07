@@ -1,20 +1,22 @@
 from CitrineChallenge.src.calculator import calculate
 from os import path
 
-here = path.abspath(path.dirname(__file__))
-
 def main():
 
-    input_file, output_file, n_results = (
+    here = path.abspath(path.dirname(__file__))
+
+    input_file, n_results = (
         path.join(here, 'tests', 'mixture.txt'),
-        path.join(here, 'output.txt'),
         1000
     )
 
     report_values = calculate(input_file, n_results)
 
-    saver.save(report_values, input_file, output_file)
+    return n_results, report_values.shape
 
+def test_main():
+    check1, check2 = main()
+    assert check2.shape[0] == check1 + 1
 
 if __name__ == "__main__":
-    main()
+    test_main()
