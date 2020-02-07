@@ -12,7 +12,7 @@ def main():
 
     report_values = calculate(input_file, n_results)
 
-    return n_results, report_values.shape
+    return n_results, report_values
 
 def test_main():
     check1, check2 = main()
