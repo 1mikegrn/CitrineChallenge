@@ -74,3 +74,5 @@ the generate function uses linear interpolation to build new test values from
 previously rejected test values and accepted report values.
 
 """
+
+from CitrineChallenge import python_api
