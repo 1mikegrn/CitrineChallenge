@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/1mikegrn/CitrineChallenge.svg?branch=master)](https://travis-ci.com/1mikegrn/CitrineChallenge)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1mikegrn/CitrineChallenge/blob/master/colab/CitrineChallenge.ipynb)
 
 # CitrineChallenge

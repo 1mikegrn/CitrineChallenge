@@ -15,15 +15,6 @@ from the CLI to the necessary subroutines within the library for calculation.
 
 ::
 
-    CitrineChallenge.src.python_api.analyze()
-
-this is the entry point for a Python instance. analyze() takes an input argument 
-of the file location for a constaints file, and an n_results integer for 
-determining how many results to generate.
-
-
-::
-
     CitrineChallenge.src.calculator.calculate(
         input_file, n_results
     )
