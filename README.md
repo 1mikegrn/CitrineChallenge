@@ -4,7 +4,8 @@
 
 # CitrineChallenge
 
-Citrine Informatics Technical Challenge - Scientific Software Engineer
+##### Citrine Informatics Technical Challenge - Scientific Software Engineer
+---
 
 CitrineChallenge is the Python library built by Michael Green as a submission
 for the technical challenge provided by Citrine Informatics.
