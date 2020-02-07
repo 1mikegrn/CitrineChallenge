@@ -9,7 +9,7 @@ class Constraint():
         """
 
         if 'google' in kwargs and kwargs['google'] is True:
-            lines = fname.decode().split('\n')
+            lines = [x for x in fname.decode().split('\n') if x != '']
         
         else:
             with open(fname, "r") as f:
