@@ -9,13 +9,11 @@ class Constraint():
         """
 
         if 'google' in kwargs and kwargs['google'] is True:
-            lines = [x for x in fname.decode().split('\n')+r'\n' if x != '']
+            lines = [x for x in fname.decode().split('\n') if x != '']
         
         else:
             with open(fname, "r") as f:
                 lines = f.readlines()
-
-        return lines
 
         # Parse the dimension from the first line
         self.n_dim = int(lines[0])
