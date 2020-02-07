@@ -40,3 +40,18 @@ there are methods which could be implemented to build an array of the corners of
 the feasible region (see simplex method and introducing slack variables) and
 then apply the switch function to those corner points; but in an effort to stay
 below the time constraint, we save this for a future version.
+
+## Getting Started
+
+From the command prompt, the latest version this library can be installed
+via pip and git
+
+    pip install git+https://github.com/1mikegrn/CitrineChallenge
+
+Where the setup file will automatically check dependencies and install
+to the main module library. Once installed, calling `sampler
+<input_file> <output_file> <n_results>` will execute the calculation.
+
+This library also has a colab jupyter notebook, from which calculations can be
+executed without any necessary local downloads. See the include repo-badge at
+the top of this page to be directed there.
