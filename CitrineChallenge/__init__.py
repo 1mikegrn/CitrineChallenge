@@ -22,13 +22,13 @@ and generating is repeated until there are no bad vectors.
 
 To note, this is what I would consider a 'minimally viable product'. The library
 is built modularly so to allow pieces of it to be optimized as desired by a 
-teamleader. Values tend to cluster a tad near the center of the hypercube, and
-future optimization would inclue the integration of methods which would better 
-correct for this tendency. It's not a hard problem per se, as there are methods
-which could be implemented to build an array of the corners of the feasible 
-region (see simplex method and introducing slack variables) and then apply the
-switch function to those corner points; but in an effort to stay below the time 
-constraint, we save this for a future version.
+teamleader. Values tend to cluster a tad near the inner boundaries of the 
+hypercube, and future optimization would inclue the integration of methods which 
+would better correct for this tendency. It's not a hard problem per se, as there 
+are methods which could be implemented to build an array of the corners of the 
+feasible region (see simplex method and introducing slack variables) and then
+apply the switch function to those corner points; but in an effort to stay below 
+the time constraint, we save this for a future version.
 
 This library includes the following functions:
 
@@ -46,15 +46,13 @@ from the CLI to the necessary subroutines within the library for caluclation.
     )
 
 the calculator uses the input file and n_results integer to run the calculation.
-results are returned to be saved. see CitrineChallenge.src.calculator.calculate? 
-for further documentation.
+results are returned to be saved.
 
 ::
 
     CitrineChallenge.src.tools.cmd_reader.reader()
 
 the reader function parses the command-line interface arguments for calculation.
-see CitrineChallenge.src.tools.cmd_reader.reader? for further documentation
 
 ::
 
@@ -64,8 +62,7 @@ see CitrineChallenge.src.tools.cmd_reader.reader? for further documentation
 
 the cleaning function extracts the passing test values from the test_values 
 array and appends them to the report_values array, using constraints defined in
-the class_object. See CitrineChallenge.src.tools.cleaning.cleaner? for 
-further documentation
+the class_object.
 
 ::
 
@@ -74,7 +71,6 @@ further documentation
     )
 
 the generate function uses linear interpolation to build new test values from
-previously rejected test values and accepted report values. See
-CitrineChallenge.src.tools.generator.generate? for further documentation
+previously rejected test values and accepted report values.
 
 """
