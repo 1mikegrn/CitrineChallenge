@@ -4,20 +4,18 @@ from numpy import(
 
 from numpy.random import random_sample
 
-from src.tools import(
+from CitrineChallenge.src.tools import(
     cmd_reader,
     cleaning, 
     generator,
     saver
 ) 
 
-from src.constraints import Constraint
+from CitrineChallenge.src.constraints import Constraint
 
 def main():
 
-    thing, input_file, output_file, n_results = cmd_reader.reader()
-
-    print(thing, input_file, output_file, n_results)
+    input_file, output_file, n_results = cmd_reader.reader()
 
     class_object = Constraint(input_file)
 
@@ -45,7 +43,7 @@ def main():
             report_values=report_values
         )
 
-    saver.save(report_values, output_file)
+    saver.save(report_values, input_file, output_file)
 
 if __name__ == "__main__":
     main()
