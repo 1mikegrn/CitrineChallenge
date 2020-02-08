@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/1mikegrn/CitrineChallenge.svg?branch=master)](https://travis-ci.com/1mikegrn/CitrineChallenge)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1mikegrn/CitrineChallenge/blob/master/colab/CitrineChallenge.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1mikegrn/CitrineChallenge/blob/master/colab/CitrineChallenge_notebook.ipynb)
 [![DocSite](https://img.shields.io/badge/Docs-Site-blue)](https://1mikegrn.github.io/CitrineChallenge/)
 
 # CitrineChallenge
