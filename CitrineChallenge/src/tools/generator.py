@@ -61,8 +61,8 @@ between every accepted vector and rejected vector there is a space that is
 guaranteed to be part 'feasible' and part 'infeasible'. The switch function uses
 linear interpolation to pick a random vector between the accepted vector and 
 rejected vector, and replaces the rejected vector with this new vector to be 
-tested. :code:`Switch()` makes use of broadcasting over numpy arrays for 
-increased performance.
+tested. :code:`Switch()` makes use of ufuncs over numpy arrays for increased 
+performance.
 
 ::
 
