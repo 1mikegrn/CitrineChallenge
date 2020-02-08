@@ -54,5 +54,5 @@ to the main module library. Once installed, calling `sampler
 <input_file> <output_file> <n_results>` will execute the calculation.
 
 This library also has a colab jupyter notebook, from which calculations can be
-executed without any necessary local downloads. See the include repo-badge at
+executed without any necessary local downloads. See the included repo-badge at
 the top of this page to be directed there.
