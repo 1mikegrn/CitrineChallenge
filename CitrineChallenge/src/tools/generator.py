@@ -26,7 +26,7 @@ function and replaced in position.
     :param report_values:   <numpy.array>
 
 array of values previously accepted by the cleaner function. A set of random 
-vectors are sefected from this array and utilized by the :code:`switch()`
+vectors are selected from this array and utilized by the :code:`switch()`
 function for replacing the rejected test_values with a new test_values for
 cleaning.
 

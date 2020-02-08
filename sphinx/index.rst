@@ -21,6 +21,9 @@ CitrineChallenge
 .. automodule:: CitrineChallenge.src.__main__
    :members: main
 
+.. automodule:: CitrineChallenge.src.calculator
+   :members: calculate
+
 .. automodule:: CitrineChallenge.src.tools.cmd_reader
    :members: reader
 
@@ -28,7 +31,7 @@ CitrineChallenge
    :members: clean
 
 .. automodule:: CitrineChallenge.src.tools.generator
-   :members: generate
+   :members: generate, switch
 
 .. automodule:: CitrineChallenge.src.tools.saver
    :members: save

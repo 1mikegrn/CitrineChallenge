@@ -252,6 +252,31 @@ saved.</p>
 </div>
 </dd></dl>
 
+<span class="target" id="module-CitrineChallenge.src.calculator"></span><dl class="function">
+<dt id="CitrineChallenge.src.calculator.calculate">
+<code class="sig-prename descclassname">CitrineChallenge.src.calculator.</code><code class="sig-name descname">calculate</code><span class="sig-paren">(</span><em class="sig-param">input_file</em>, <em class="sig-param">n_results</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.calculator.calculate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Objective:</p>
+<p>Generate an array of vectors which satisfy the constraints, input by the 
+provided constraints input_file. Delegates the calculation between the
+<code class="code docutils literal notranslate"><span class="pre">clean()</span></code> and <code class="code docutils literal notranslate"><span class="pre">generate()</span></code> functions until all the results generated
+satisfy all constraints.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">input_file</span><span class="p">:</span>      <span class="nb">str</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>string which points to the constraints file from outside the module. 
+<code class="code docutils literal notranslate"><span class="pre">input_file</span></code> is parsed by the <code class="code docutils literal notranslate"><span class="pre">Constraints()</span></code> class so to generate
+the constraints parameter, the hypercube dimensionality, and the example point.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">n_results</span><span class="p">:</span>       <span class="nb">int</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>n_results is the integer_value of results to be generated.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="k">return</span><span class="p">:</span>                <span class="n">report_values</span>
+</pre></div>
+</div>
+<p>report_values is the NxM array of results determined to satisfy the constraints,
+where N is the n_results + 1 and M is the hypercube dimensionality.</p>
+</dd></dl>
+
 <span class="target" id="module-CitrineChallenge.src.tools.cmd_reader"></span><dl class="function">
 <dt id="CitrineChallenge.src.tools.cmd_reader.reader">
 <code class="sig-prename descclassname">CitrineChallenge.src.tools.cmd_reader.</code><code class="sig-name descname">reader</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.tools.cmd_reader.reader" title="Permalink to this definition">¶</a></dt>
@@ -353,7 +378,7 @@ function and replaced in position.</p>
 </pre></div>
 </div>
 <p>array of values previously accepted by the cleaner function. A set of random 
-vectors are sefected from this array and utilized by the <code class="code docutils literal notranslate"><span class="pre">switch()</span></code>
+vectors are selected from this array and utilized by the <code class="code docutils literal notranslate"><span class="pre">switch()</span></code>
 function for replacing the rejected test_values with a new test_values for
 cleaning.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">returns</span><span class="p">:</span>               <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
@@ -361,6 +386,36 @@ cleaning.</p>
 </div>
 <p>function returns a numpy array containing a new set of test values for 
 cleaning.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="CitrineChallenge.src.tools.generator.switch">
+<code class="sig-prename descclassname">CitrineChallenge.src.tools.generator.</code><code class="sig-name descname">switch</code><span class="sig-paren">(</span><em class="sig-param">report_values</em>, <em class="sig-param">test_values</em><span class="sig-paren">)</span><a class="headerlink" href="#CitrineChallenge.src.tools.generator.switch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Objective:</p>
+<p>Replace the ‘rejected’ points from the test_values array with new test points
+to be examined by the <code class="code docutils literal notranslate"><span class="pre">clean()</span></code> function. The logic is rather simple - 
+between every accepted vector and rejected vector there is a space that is 
+guaranteed to be part ‘feasible’ and part ‘infeasible’. The switch function uses
+linear interpolation to pick a random vector between the accepted vector and 
+rejected vector, and replaces the rejected vector with this new vector to be 
+tested. <code class="code docutils literal notranslate"><span class="pre">Switch()</span></code> makes use of broadcasting over numpy arrays for 
+increased performance.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">report_values</span><span class="p">:</span>       <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>the vector provided from the <code class="code docutils literal notranslate"><span class="pre">generate()</span></code> function located in src.generate
+which picks random accepted points from the array of accepted vectors.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">test_values</span><span class="p">:</span>         <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>the vector provided from the <code class="code docutils literal notranslate"><span class="pre">generate()</span></code> function located in src.generate
+which provides the rejected vectors from the test_values array.</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">returns</span><span class="p">:</span>                   <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>a numpy array of new vectors for subsequent cleaning.</p>
 </dd></dl>
 
 <span class="target" id="module-CitrineChallenge.src.tools.saver"></span><dl class="function">
