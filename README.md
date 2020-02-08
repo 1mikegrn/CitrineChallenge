@@ -19,10 +19,11 @@ satisfy a system of non-linear constraints.
 
 The current method is an iterative process which, from a set of random
 vectors within the hypercube, linearly interpolates between good vectors and bad
-vectors, until there are no more bad vectors. An initial set of random vectors
-is generated as an array called test_values. test_values is then passed through
-a cleaning function to extract vectors which satisfy the constraints provided,
-and place these vectors in a separate array called report_values to be reported.
+vectors to generate new vectors, until the number of required accepted vectors
+is reached. An initial set of random vectors is generated as an array called
+test_values. test_values is then passed through a cleaning function to extract
+vectors which satisfy the constraints provided, and place these vectors in a
+separate array called report_values to be reported.
 
 Now that we have two arrays, the arrays are passed through a generator function.
 For each vector in the test_values array, the generator function pairs this
