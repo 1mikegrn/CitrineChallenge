@@ -18,8 +18,8 @@ a new test value. The new test values are returned for cleaning.
     :param test_values:     <numpy.array>
 
 test_values are values which were rejected by the :code:`cleaner()` function 
-located in src.cleaning. These values are passed through the :code:`switch()`
-function and replaced in position.
+located in src.tools.cleaning. These values are passed through the 
+:code:`switch()` function and replaced in position.
 
 ::
 
@@ -68,15 +68,17 @@ performance.
 
     :param report_values:       <numpy.array>
 
-the vector provided from the :code:`generate()` function located in src.generate
-which picks random accepted points from the array of accepted vectors.
+the vector provided from the :code:`generate()` function located in 
+src.tools.generator which picks random accepted points from the array of 
+accepted vectors.
 
 ::
 
     :param test_values:         <numpy.array>
 
-the vector provided from the :code:`generate()` function located in src.generate
-which provides the rejected vectors from the test_values array.
+the vector provided from the :code:`generate()` function located in 
+src.tools.generator which provides the rejected vectors from the test_values 
+array.
 
  ::
 

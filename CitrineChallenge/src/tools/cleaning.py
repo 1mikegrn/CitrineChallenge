@@ -19,7 +19,7 @@ array is shortened by deleting the transferred values.
 
     :param class_object:    <class>
 
-class_object is the 'Constraints' class defined in src/constraints.py
+class_object is the 'Constraints' class defined in src.constraints.py
 
 ::
 

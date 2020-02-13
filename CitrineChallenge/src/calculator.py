@@ -14,7 +14,7 @@ Objective:
 
 Generate an array of vectors which satisfy the constraints, input by the 
 provided constraints input_file. Delegates the calculation between the
-:code:`clean()` and :code:`generate()` functions until all the results generated
+cleaning and generating located in src.tools until all the results generated 
 satisfy all constraints. 
 
 ::
