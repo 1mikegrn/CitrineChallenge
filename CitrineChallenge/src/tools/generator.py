@@ -88,7 +88,7 @@ a numpy array of new vectors for subsequent cleaning.
    
     """
 
-    pct = random_sample()
+    pct = random_sample(test_values.shape)
     new_point = (1-pct)*report_values + pct*test_values
 
     return new_point
