@@ -12,7 +12,7 @@ HypercubeChallenge: A submission for the Hypercube Challenge
 
 .. include:: main_page.rst
 
-CitrineChallenge
+HypercubeChallenge
 ================
 
 .. automodule:: HypercubeChallenge.__init__
