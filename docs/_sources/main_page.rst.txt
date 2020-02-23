@@ -26,7 +26,9 @@ calculation.
 
 This library also has a colab jupyter notebook, from which calculations can be
 executed without any necessary local downloads.
-`@Colab <https://colab.research.google.com/github/1mikegrn/HypercubeChallenge/blob/master/colab/HypercubeChallenge.ipynb>`_
+
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+   :target: https://colab.research.google.com/github/1mikegrn/HypercubeChallenge/blob/master/colab/HypercubeChallenge_notebook.ipynb
 
 Library Structure
 =================
