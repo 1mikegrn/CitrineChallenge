@@ -1,9 +1,9 @@
-from CitrineChallenge.src.tools import(
+from HypercubeChallenge.src.tools import(
     saver
 )
 
-from CitrineChallenge.src.calculator import calculate
-from CitrineChallenge.src.constraints import Constraint
+from HypercubeChallenge.src.calculator import calculate
+from HypercubeChallenge.src.constraints import Constraint
 
 from os import path
 

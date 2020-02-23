@@ -1,12 +1,12 @@
 from numpy import array
 from numpy.random import random_sample
 
-from CitrineChallenge.src.tools import(
+from HypercubeChallenge.src.tools import(
     cleaning, 
     generator
 )
 
-from CitrineChallenge.src.constraints import Constraint
+from HypercubeChallenge.src.constraints import Constraint
 
 def calculate(input_file, n_results, **kwargs):
     """

@@ -7,11 +7,11 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='CitrineChallenge',
+    name='HypercubeChallenge',
     version='0.0.1',
-    description='Citrine Informatics Challenge - Scientific Software Engineer',
+    description='HypercubeChallenge',
     long_description=long_description,
-    url='https://github.com/1mikegrn/CitrineChallenge',
+    url='https://github.com/1mikegrn/HypercubeChallenge',
     author='Michael Green',
     author_email='1mikegrn@gmail.com',
     license='GPL-3.0',
@@ -36,12 +36,12 @@ setup(
     ],
 
     entry_points={
-        'console_scripts': ['sampler=CitrineChallenge.src.__main__:main']
+        'console_scripts': ['HyperCMD=HypercubeChallenge.src.__main__:main']
     },
 
     project_urls={
-        'GitHub': 'https://github.com/1mikegrn/CitrineChallenge/',
-        'DocSite': 'https://1mikegrn.github.io/CitrineChallenge/',
+        'GitHub': 'https://github.com/1mikegrn/HypercubeChallenge/',
+        'DocSite': 'https://1mikegrn.github.io/HypercubeChallenge/',
         'Personal Blog': 'https://1mikegrn.github.io',
         'Google Scholar': 'https://scholar.google.com/citations?user=DxFljRYAAAAJ&hl=en'
     }

@@ -1,5 +1,5 @@
 """
-The CitrineChallenge library
+The HypercubeChallenge library
 
 This library is designed to build an array of vectors in an n-dimensional 
 hypercube, whose vectors satisfy a system of non-linear constraints.
@@ -8,7 +8,7 @@ This library includes the following functions:
 
 ::
 
-    CitrineChallenge.src.__main__.main()
+    HypercubeChallenge.src.__main__.main()
 
 this is the entry point of the command line interface. :code:`main()` directs 
 arguments from the CLI to the necessary subroutines within the library for 
@@ -16,7 +16,7 @@ calculation.
 
 ::
 
-    CitrineChallenge.src.calculator.calculate(
+    HypercubeChallenge.src.calculator.calculate(
         input_file, n_results
     )
 
@@ -25,13 +25,13 @@ results are returned to be saved.
 
 ::
 
-    CitrineChallenge.src.tools.cmd_reader.reader()
+    HypercubeChallenge.src.tools.cmd_reader.reader()
 
 the reader function parses the command-line interface arguments for calculation.
 
 ::
 
-    CitrineChallenge.src.tools.cleaning.cleaner(
+    HypercubeChallenge.src.tools.cleaning.cleaner(
         class_object, report_values, test_values
     )
 
@@ -41,7 +41,7 @@ the class_object.
 
 ::
 
-    CitrineChallenge.src.tools.generator.generate(
+    HypercubeChallenge.src.tools.generator.generate(
         test_values, report_values
     )
 
@@ -50,4 +50,4 @@ previously rejected test values and accepted report values.
 
 """
 
-from CitrineChallenge import src
+from HypercubeChallenge import src

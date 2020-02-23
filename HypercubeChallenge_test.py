@@ -1,4 +1,4 @@
-from CitrineChallenge.src.calculator import calculate
+from HypercubeChallenge.src.calculator import calculate
 from os import path
 
 def main():

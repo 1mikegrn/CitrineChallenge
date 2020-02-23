@@ -1,6 +1,6 @@
 """Tools used by the library to generate the output file"""
 
-from CitrineChallenge.src.tools import(
+from HypercubeChallenge.src.tools import(
     cleaning,
     cmd_reader,
     generator,

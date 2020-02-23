@@ -1,17 +1,17 @@
 
-from CitrineChallenge.src.tools import(
+from HypercubeChallenge.src.tools import(
     cmd_reader,
     saver
 ) 
 
-from CitrineChallenge.src.calculator import calculate
-from CitrineChallenge.src.constraints import Constraint
+from HypercubeChallenge.src.calculator import calculate
+from HypercubeChallenge.src.constraints import Constraint
 
 def main():
     """
 
 Entry point for the command line interface. Function directs arguments from the 
-CLI reader to the necessary subroutines within the library for caluclation. Once
+CLI reader to the necessary subroutines within the library for calculation. Once
 the calculation is done, results are passed to the :code:`save()` function to be
 saved.
 

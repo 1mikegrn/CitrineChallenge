@@ -1,14 +1,11 @@
-[![Build Status](https://travis-ci.com/1mikegrn/CitrineChallenge.svg?branch=master)](https://travis-ci.com/1mikegrn/CitrineChallenge)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1mikegrn/CitrineChallenge/blob/master/colab/CitrineChallenge_notebook.ipynb)
-[![DocSite](https://img.shields.io/badge/Docs-Site-blue)](https://1mikegrn.github.io/CitrineChallenge/)
+# HypercubeChallenge
 
-# CitrineChallenge
+[![Build Status](https://travis-ci.com/1mikegrn/HypercubeChallenge.svg?branch=master)](https://travis-ci.com/1mikegrn/HypercubeChallenge)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1mikegrn/HypercubeChallenge/blob/master/colab/HypercubeChallenge_notebook.ipynb)
+[![DocSite](https://img.shields.io/badge/Docs-Site-blue)](https://1mikegrn.github.io/HypercubeChallenge/)
 
-##### Citrine Informatics Technical Challenge - Scientific Software Engineer
----
-
-CitrineChallenge is the Python library built by Michael Green as a submission
-for the technical challenge provided by Citrine Informatics.
+HypercubeChallenge is the Python library built by Michael Green as a submission
+for the Hypercube Challenge.
 
 ## Objective
 
@@ -48,12 +45,13 @@ below the time constraint, we save this for a future version.
 From the command prompt, the latest version this library can be installed
 via pip and git
 
-    pip install git+https://github.com/1mikegrn/CitrineChallenge
+    pip install git+https://github.com/1mikegrn/HypercubeChallenge
 
 Where the setup file will automatically check dependencies and install
-to the main module library. Once installed, calling `sampler
-<input_file> <output_file> <n_results>` will execute the calculation.
+to the main module library. Once installed, calling `HyperCMD
+<input_file> <output_file> <n_results>` will execute the calculation from the
+command line.
 
 This library also has a colab jupyter notebook, from which calculations can be
 executed without any necessary local downloads. See the included repo-badge at
-the top of this page to be directed there. 
+the top of this page to be directed there.

@@ -18,8 +18,8 @@ As such, the parameters are discussed below.
 
     :param sampler:         sampler
 
-The console script which initiates the __main__ function in the CitrineChallenge
-module.
+The console script which initiates the __main__ function in the 
+HypercubeChallenge module.
 
 ::
 
@@ -29,7 +29,7 @@ This parameter is a string containing the file path to the input_file. The
 input_file starts with a single line header that gives the dimensionality of the 
 problem, which is defined on the unit hypercube. The next line is a single 
 example feasible point. The remaining lines are a list of constraints as python 
-expressions containing + , - , * , / , and ** operators. They have been 
+expressions containing + , - , * , / , and ** operators which have been 
 transformed such that they all take the form g(x) >= 0.0. 
 
 ::

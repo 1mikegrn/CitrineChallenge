@@ -258,7 +258,7 @@ saved.</p>
 <dd><p>Objective:</p>
 <p>Generate an array of vectors which satisfy the constraints, input by the 
 provided constraints input_file. Delegates the calculation between the
-cleaning and generating located in src.tools until all the results generated 
+<code class="code docutils literal notranslate"><span class="pre">clean()</span></code> and <code class="code docutils literal notranslate"><span class="pre">generate()</span></code> functions until all the results generated
 satisfy all constraints.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">input_file</span><span class="p">:</span>      <span class="nb">str</span><span class="p">()</span>
 </pre></div>
@@ -338,7 +338,7 @@ array is shortened by deleting the transferred values.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">class_object</span><span class="p">:</span>    <span class="o">&lt;</span><span class="n">class</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>class_object is the ‘Constraints’ class defined in src.constraints.py</p>
+<p>class_object is the ‘Constraints’ class defined in src/constraints.py</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">report_values</span><span class="p">:</span>   <span class="o">&lt;</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -372,13 +372,13 @@ a new test value. The new test values are returned for cleaning.</p>
 </pre></div>
 </div>
 <p>test_values are values which were rejected by the <code class="code docutils literal notranslate"><span class="pre">cleaner()</span></code> function 
-located in src.tools.cleaning. These values are passed through the 
-<code class="code docutils literal notranslate"><span class="pre">switch()</span></code> function and replaced in position.</p>
+located in src.cleaning. These values are passed through the <code class="code docutils literal notranslate"><span class="pre">switch()</span></code>
+function and replaced in position.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">report_values</span><span class="p">:</span>   <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>array of values previously accepted by the cleaner function. A set of random 
-vectors are selected from this array and utilized by the <code class="code docutils literal notranslate"><span class="pre">switch()</span></code>
+vectors are sefected from this array and utilized by the <code class="code docutils literal notranslate"><span class="pre">switch()</span></code>
 function for replacing the rejected test_values with a new test_values for
 cleaning.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">returns</span><span class="p">:</span>               <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
@@ -398,20 +398,18 @@ between every accepted vector and rejected vector there is a space that is
 guaranteed to be part ‘feasible’ and part ‘infeasible’. The switch function uses
 linear interpolation to pick a random vector between the accepted vector and 
 rejected vector, and replaces the rejected vector with this new vector to be 
-tested. <code class="code docutils literal notranslate"><span class="pre">Switch()</span></code> makes use of ufuncs over numpy arrays for increased 
-performance.</p>
+tested. <code class="code docutils literal notranslate"><span class="pre">Switch()</span></code> makes use of broadcasting over numpy arrays for 
+increased performance.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">report_values</span><span class="p">:</span>       <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>the vector provided from the <code class="code docutils literal notranslate"><span class="pre">generate()</span></code> function located in 
-src.tools.generator which picks random accepted points from the array of 
-accepted vectors.</p>
+<p>the vector provided from the <code class="code docutils literal notranslate"><span class="pre">generate()</span></code> function located in src.generate
+which picks random accepted points from the array of accepted vectors.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">param</span> <span class="n">test_values</span><span class="p">:</span>         <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>the vector provided from the <code class="code docutils literal notranslate"><span class="pre">generate()</span></code> function located in 
-src.tools.generator which provides the rejected vectors from the test_values 
-array.</p>
+<p>the vector provided from the <code class="code docutils literal notranslate"><span class="pre">generate()</span></code> function located in src.generate
+which provides the rejected vectors from the test_values array.</p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">returns</span><span class="p">:</span>                   <span class="o">&lt;</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="o">&gt;</span>
 </pre></div>
