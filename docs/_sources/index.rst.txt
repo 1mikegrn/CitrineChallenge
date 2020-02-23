@@ -3,11 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-CitrineChallenge: A submission for Citrine's Technical Challenge 
+HypercubeChallenge: A submission for the Hypercube Challenge 
 ================================================================
 
 .. image:: https://img.shields.io/badge/GitHub-repo-lightgrey
-   :target: https://github.com/1mikegrn/CitrineChallenge
+   :target: https://github.com/1mikegrn/HypercubeChallenge
 
 
 .. include:: main_page.rst
@@ -15,25 +15,25 @@ CitrineChallenge: A submission for Citrine's Technical Challenge
 CitrineChallenge
 ================
 
-.. automodule:: CitrineChallenge.__init__
+.. automodule:: HypercubeChallenge.__init__
    :members:
 
-.. automodule:: CitrineChallenge.src.__main__
+.. automodule:: HypercubeChallenge.src.__main__
    :members: main
 
-.. automodule:: CitrineChallenge.src.calculator
+.. automodule:: HypercubeChallenge.src.calculator
    :members: calculate
 
-.. automodule:: CitrineChallenge.src.tools.cmd_reader
+.. automodule:: HypercubeChallenge.src.tools.cmd_reader
    :members: reader
 
-.. automodule:: CitrineChallenge.src.tools.cleaning
+.. automodule:: HypercubeChallenge.src.tools.cleaning
    :members: clean
 
-.. automodule:: CitrineChallenge.src.tools.generator
+.. automodule:: HypercubeChallenge.src.tools.generator
    :members: generate, switch
 
-.. automodule:: CitrineChallenge.src.tools.saver
+.. automodule:: HypercubeChallenge.src.tools.saver
    :members: save
 
 .. include:: /about.rst
