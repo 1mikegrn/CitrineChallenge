@@ -36,7 +36,7 @@ Library Structure
 ::
 
     HypercubeChallenge/
-        __init__.py                         # initialize CitrineChallenge
+        __init__.py                         # initialize HypercubeChallenge
         src/                                # source module
             __init__.py                     # initialize src
             __main__.py                     # CLI access point

@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 HypercubeChallenge: A submission for the Hypercube Challenge 
-================================================================
+=============================================================
 
 .. image:: https://img.shields.io/badge/GitHub-repo-lightgrey
    :target: https://github.com/1mikegrn/HypercubeChallenge
@@ -13,7 +13,7 @@ HypercubeChallenge: A submission for the Hypercube Challenge
 .. include:: main_page.rst
 
 HypercubeChallenge
-================
+==================
 
 .. automodule:: HypercubeChallenge.__init__
    :members:
